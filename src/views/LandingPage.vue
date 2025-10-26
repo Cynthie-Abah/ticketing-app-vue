@@ -1,38 +1,38 @@
 <template>
-    <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
-      <section className="relative bg-linear-to-br from-blue-400 to-blue-800 text-white overflow-hidden">
+    <div class="min-h-screen bg-linear-to-b from-gray-50 to-white">
+      <section class="relative bg-linear-to-br from-blue-400 to-blue-800 text-white overflow-hidden">
         <!-- {/* DECORATION BEGINS... */} -->
 
         <!-- {/* blur circle */} -->
-        <div className="absolute top-15 right-10 w-80 h-80 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute top-15 right-10 w-80 h-80 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
         <!-- {/* blur circle  */} -->
-        <div className="absolute bottom-15 left-15 w-96 h-96 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-15 left-15 w-96 h-96 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
         <!-- {/* transition */} -->
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-blue-800 opacity-30 blur-2xl"></div>
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-blue-800 opacity-30 blur-2xl"></div>
 
-        <div className="absolute -top-20 -left-20 w-96 h-96 bg-white opacity-10 rounded-full"></div>
-        <div className="absolute bottom-60 right-20 w-64 h-64 bg-white opacity-8 rounded-full"></div>
+        <div class="absolute -top-20 -left-20 w-96 h-96 bg-white opacity-10 rounded-full"></div>
+        <div class="absolute bottom-60 right-20 w-64 h-64 bg-white opacity-8 rounded-full"></div>
 
         <!-- {/* ...DECORATION TEM ENDS */} -->
 
         <!-- {/* HERO */} -->
-        <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-          <div className="text-center max-w-4xl mx-auto">
+        <div class="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+          <div class="text-center max-w-4xl mx-auto">
             <!-- {/* apps name */} -->
-            <h1 className="apps-name text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 class="apps-name text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               TicketFlow
             </h1>
             <!-- {/* catchy description */} -->
-            <p className="text-xl sm:text-2xl max-w-9/12 m-auto text-blue-100 mb-10 leading-relaxed">
+            <p class="text-xl sm:text-2xl max-w-9/12 m-auto text-blue-100 mb-10 leading-relaxed">
               Streamline Your Ticket Management <br />
                 Track, manage, and resolve tickets with ease. Built for teams that value efficiency and clarity.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <RouterLink 
                     v-if="user"
                     to="/dashboard"
-                    className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+                    class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
                 >
                     Go to Dashboard
                 </RouterLink>
@@ -40,13 +40,13 @@
                 <div class="flex gap-10" v-else>
                 <RouterLink
                     to="/signup"
-                    className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
+                    class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl"
                 >
                     Get Started
                 </RouterLink>
                 <RouterLink
                     to="/login"
-                    className="bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-all border-2 border-white"
+                    class="bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-all border-2 border-white"
                 >
                     Login
                 </RouterLink>
